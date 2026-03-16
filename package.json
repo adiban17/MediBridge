@@ -1,0 +1,28 @@
+{
+  "name": "medibridge",
+  "version": "1.0.0",
+  "description": "A comprehensive healthcare platform connecting rural patients with medical professionals",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "healthcare",
+    "rural",
+    "telemedicine",
+    "firebase",
+    "ai",
+    "medical"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^12.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/medibridge.git"
+  },
+  "homepage": "https://yourusername.github.io/medibridge/"
+}

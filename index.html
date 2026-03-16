@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollytelling Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="global-translate-container"><div id="google_translate_element"></div></div>
+    <nav class="site-header">
+    <img src="assets/logo.png" alt="MediBridge Logo" class="brand-logo">
+    <a href="login.html" class="btn-login">Log In</a>
+</nav>
+    
+    <div class="scroll-track">
+        <div class="sticky-container">
+            <video 
+                src="assets/optimized_light_video.mp4" 
+                muted 
+                playsinline 
+                preload="auto"
+            ></video>
+        </div>
+    </div>
+    
+    <div id="ui-layer">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Healthcare,<br><span class="rainbow-text">Unbound.</span></h1>
+                <p class="subtitle">Connecting remote communities to expert care through resilient, low-bandwidth telemedicine and AI triage.</p>
+            </div>
+            <div class="hero-right">
+                <p class="hospital-credit">Made for Nabha Civil Hospital<br>in association with Infinite Loop</p>
+            </div>
+        </div>
+        
+        <section class="step-1">
+            <h2>Speak your mind, naturally.</h2>
+            <p>A seamless, voice-activated interface designed to bridge the digital divide. By eliminating the need to type or read complex terms, it ensures accessible mental health care for every user, regardless of technical literacy. Powered effortlessly by the <span class="kw-bhashini">Bhashini API</span>.</p>
+        </section>
+        
+        <section class="step-2">
+            <h2>Unbroken connection, anywhere.</h2>
+            <p>Built to thrive on the most fragile mobile networks, this highly compressed conferencing tool guarantees stable audio and video. It eliminates dropped calls and frozen screens, ensuring care reaches the most remote areas without interruption, leveraging <span class="kw-webrtc">WebRTC (AV1/Opus Codecs)</span>.</p>
+        </section>
+        
+        <section class="step-3">
+            <h2>Your records, always ready.</h2>
+            <p>A resilient, offline-first database that securely stores patient history locally. Even in areas entirely cut off from cellular signals, health workers can log prescriptions and review data, syncing automatically the moment a network returns, driven by <span class="kw-pouchdb">PouchDB and CouchDB</span>.</p>
+        </section>
+        
+        <section class="step-4">
+            <h2>Pharmacy routing, automated.</h2>
+            <p>Save time, travel, and frustration. Our intelligent alert system instantly communicates with nearby pharmacies to verify medication availability before you ever leave your home. Seamlessly connected through the <span class="kw-whatsapp">WhatsApp Business API</span>.</p>
+        </section>
+        
+        <div class="final-cta">
+            <h2>Healthcare, without boundaries.</h2>
+            <p>Join the platform bringing equitable, scalable digital healthcare to every village.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Partner with Us</a>
+                <a href="#" class="btn-secondary">Explore Features</a>
+            </div>
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p>&copy; 2026 MediBridge. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,pa,hi',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
